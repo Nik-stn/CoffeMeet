@@ -91,4 +91,11 @@ main.main {
     font-weight: 600;
     font-size: 14px;
 }
+
+.header nav {
+    padding: 30px 0;
+    border-top: 1px solid #32323D;
+    border-bottom: 1px solid #32323D;
+    background-color: var(--bg-color);
+}
 /* Header*/
