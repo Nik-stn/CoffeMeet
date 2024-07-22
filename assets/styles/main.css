@@ -81,3 +81,14 @@ main.main {
     flex: 1 1 auto;
 }
 /* General rules */
+
+/* Header*/
+.header-top {
+    padding: 8px 0;
+}
+
+.header-top a {
+    font-weight: 600;
+    font-size: 14px;
+}
+/* Header*/
