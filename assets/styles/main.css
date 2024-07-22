@@ -35,8 +35,49 @@
         url("../fonts/Jost-Black.woff") format("woff");
 }
 
+/* General rules */
+:root {
+    --bg-color: #020204;
+    --text-color: #fff;
+    --accent-color: #C7A17A;
+}
+
+html,
+body {
+    height: 100vh;
+}
 
 body {
+    min-width: 320px;
     font-family: "Jost", sans-serif;
     font-weight: 400;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color .3s ;
+}
+
+a:hover,
+a.active {
+    color: var(--accent-color);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    flex: 1 1 auto;
+}
+/* General rules */
