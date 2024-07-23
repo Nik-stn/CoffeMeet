@@ -14,8 +14,10 @@
 
   <div class="wrapper">
 
+    <!-- Header -->
     <header class="header">
       
+      <!-- header-top -->
       <div class="container">
         <div class="header-top d-flex justify-content-between">
             <ul class="languages list-inline mb-0">
@@ -25,7 +27,9 @@
             <a class="header-phone" href="tel:+371000000">+371000000</a>
         </div>
       </div>
+      <!-- ./header-top -->
 
+      <!-- header-nav -->
       <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -57,16 +61,51 @@
             </div>
           </div>
 
-          <ul class="list-inline mb-0 header-icons">
-            <li class="list-inline-item"><a href="#"><span class="icon-user"></span></a></li>
-            <li class="list-inline-item"><a href="#"><span class="icon-favorite"></span></span></a></li>
-            <li class="list-inline-item"><a href="#"><span class="icon-cart"><span></span></span></a></li>
-          </ul>
+          <div id="nav-icons"></div>
+
           
         </div>
       </nav>
+      <!-- ./header-nav -->
+
+      <!-- header-icons -->
+      <ul class="list-inline mb-0 header-icons d-none gap-sm-4">
+        <li class="list-inline-item">
+          <a href="#"><span class="icon-user"></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#"><span class="icon-favorite"></span></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#offcanvasCart" data-bs-toggle="offcanvas"><span class="icon-cart"><span></span></span></a>
+        </li>
+      </ul>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ./header-icons -->
 
     </header>
+    <!-- ./Header -->
 
     <main class="main">
       MAIN
