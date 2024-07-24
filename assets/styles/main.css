@@ -40,6 +40,8 @@
     --bg-color: #020204;
     --text-color: #fff;
     --accent-color: #C7A17A;
+    --accent-color2: #A4815E;
+    --grey-color: #DFDFDF;
 }
 
 html,
@@ -79,6 +81,28 @@ a.active {
 
 main.main {
     flex: 1 1 auto;
+}
+
+.btn-warning {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+    transition: all .3s;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.btn-warning:hover {
+    background-color: var(--accent-color2);
+    border-color: var(--accent-color2);
+    color: var(--text-color);
+}
+
+.btn-outline-secondary {
+    color: var(--text-color);
+    transition: all .3s;
+    text-transform: uppercase;
+    border-radius: 10px;
 }
 /* General rules */
 
@@ -158,6 +182,32 @@ main.main {
     background-color: var(--accent-color);
 }
 /* Header*/
+
+/* Hero section*/
+.hero-section {
+    padding: 200px 0;
+}
+
+.hero-section-content h1 {
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1.44;
+}
+
+.hero-section-content p {
+    font-size: 18px;
+    color: var(--grey-color);
+    margin: 35px 0;
+}
+
+.hero-section-content .btn {
+    padding: 12px 60px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/* Hero section*/
 
 @media only screen and (max-width: 768px) {
     .header nav {
