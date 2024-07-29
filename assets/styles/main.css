@@ -218,6 +218,7 @@ section {
 /* Banner section*/
 .banner-section-img {
     position: relative;
+    padding: 0;
 }
 
 .banner-section-img::before {
@@ -314,6 +315,35 @@ section {
     margin-right: 10px;
 }
 /* Catalog section*/
+
+/* News section*/
+.news-section .card {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.news-section .card-body {
+    padding: 20px;
+}
+
+.news-section .card-title  {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 13px;
+}
+
+.news-section .card-text {
+    color: var(--grey-color);
+    height: 120px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+/* News section*/
 
 @media only screen and (max-width: 992px) {
     .hero-section {
