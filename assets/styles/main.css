@@ -373,8 +373,70 @@ section {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-
 /* Footer */
+
+/* Minicart */
+.minicart-product-row {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    /* position: relative; */
+    margin-bottom: 10px;
+}
+
+.minicart-product-row img {
+    max-height: 90px;
+    margin-right: 20px;
+}
+
+.minicart-product-info h5,
+.minicart-product-info p {
+    margin-bottom: 5px;
+}
+
+.minicart-product-info h5.product-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.minicart-product-info p.product-variation {
+    font-size: 14px;
+    font-weight: 500;
+    color: #818181;
+}
+
+.minicart-product-info p.product-qty  {
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.minicart-product-info p.product-qty input {
+    max-width: 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+
+.minicart-product-icons {
+    align-self: stretch;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.minicart-product-icons a {
+    font-size: 20px;
+    color: #818181;
+}
+
+.minicart-product-icons a:hover {
+    color: var(--accent-color);
+}
+/* Minicart */
 
 @media only screen and (max-width: 992px) {
     .hero-section {

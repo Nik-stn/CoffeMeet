@@ -81,25 +81,65 @@
         </li>
       </ul>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
+      <div class="offcanvas offcanvas-end minicart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel" data-bs-theme="dark">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          
+          <div class="minicart-product-row">
+            <img src="assets/images/product1.png" alt="product">
+            <div class="minicart-product-info">
+              <h5 class="product-name">Lavazza Crema E Gusto</h5>
+              <p class="product-variation">XL</p>
+              <p class="product-qty">
+                <input type="number" value="2" min="1"> &times; $19.99
+              </p>
+            </div>
+            <div class="minicart-product-icons">
+              <a href="#" class="minicart-delete-product"><span class="icon-trash"></span></a>
+              <a href="#" class="minicart-update-product">⟳</a>
+            </div>
           </div>
-          <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+
+          <div class="minicart-product-row">
+            <img src="assets/images/product2.png" alt="product">
+            <div class="minicart-product-info">
+              <h5 class="product-name">Lavazza Crema E Gusto</h5>
+              <p class="product-variation">XL</p>
+              <p class="product-qty">
+                <input type="number" value="3" min="1"> &times; $129.99
+              </p>
+            </div>
+            <div class="minicart-product-icons">
+              <a href="#" class="minicart-delete-product"><span class="icon-trash"></span></a>
+              <a href="#" class="minicart-update-product">⟳</a>
+            </div>
           </div>
+
+          <div class="minicart-product-row">
+            <img src="assets/images/product1.png" alt="product">
+            <div class="minicart-product-info">
+              <h5 class="product-name">Lavazza Crema E Gusto</h5>
+              <p class="product-variation">XL</p>
+              <p class="product-qty">
+                <input type="number" value="1" min="1"> &times; $1339.99
+              </p>
+            </div>
+            <div class="minicart-product-icons">
+              <a href="#" class="minicart-delete-product"><span class="icon-trash"></span></a>
+              <a href="#" class="minicart-update-product">⟳</a>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="minicart-total-price">
+            <h5>Total price: $178.99</h5>
+            <button class="btn btn-outline-secondary">Update cart</button>
+          </div>
+
         </div>
       </div>
       <!-- ./header-icons -->
