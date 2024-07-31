@@ -436,6 +436,23 @@ section {
 .minicart-product-icons a:hover {
     color: var(--accent-color);
 }
+
+.minicart-total-price h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.minicart-total-price .btn,
+.minicart-btn .btn {
+    border-radius: 5px;
+}
+
+.minicart-btn .btn {
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 15px;
+}
 /* Minicart */
 
 @media only screen and (max-width: 992px) {
