@@ -301,7 +301,7 @@ section {
     font-size: 18px;
 }
 
-.product-card-details small {
+.product-price small {
     color: #818181;
     text-decoration: line-through;
     margin-left: 10px;
@@ -455,6 +455,87 @@ section {
 }
 /* Minicart */
 
+/* Product-page */
+.product-page {
+    padding-top: 80px;
+}
+
+.product-page .row {
+    margin-bottom: 80px;
+}
+
+.product-page h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-page .product-image {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-page-actions {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.product-variations {
+    margin: 30px 0;
+}
+
+.product-variations a,
+.product-variations a.active {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    transition: all .3s;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 50px;
+}
+
+.product-variations a.active,
+.product-variations a:hover {
+    background-color: transparent;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.add2cart-btn {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 0;
+}
+
+.product-description h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.44;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.product-description-content {
+    background-color: var(--dark-color);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--grey-color);
+}
+/* Product-page */
+
 @media only screen and (max-width: 992px) {
     .hero-section {
         padding: 100px 0;
@@ -474,6 +555,14 @@ section {
     
     .banner-section-content {
         border-radius: 0 0 10px 10px;
+    }
+
+    .product-page h1 {
+        font-size: 50px;
+    }
+
+    .product-variations li {
+        margin-bottom: 10px;
     }
 }
 
@@ -505,5 +594,9 @@ section {
 
     .footer .row>div:last-child {
         text-align: right;
+    }
+
+    .product-page h1 {
+        font-size: 40px;
     }
 }
