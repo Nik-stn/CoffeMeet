@@ -42,6 +42,7 @@
     --accent-color: #C7A17A;
     --accent-color2: #A4815E;
     --grey-color: #DFDFDF;
+    --grey2-color: #818181;
     --dark-color: #14141D;
     --darken-color: #22222F;
 }
@@ -302,7 +303,7 @@ section {
 }
 
 .product-price small {
-    color: #818181;
+    color: var(--grey2-color);
     text-decoration: line-through;
     margin-left: 10px;
 }
@@ -404,7 +405,7 @@ section {
 .minicart-product-info p.product-variation {
     font-size: 14px;
     font-weight: 500;
-    color: #818181;
+    color: var(--grey2-color);
 }
 
 .minicart-product-info p.product-qty  {
@@ -430,7 +431,7 @@ section {
 
 .minicart-product-icons a {
     font-size: 20px;
-    color: #818181;
+    color: var(--grey2-color);
 }
 
 .minicart-product-icons a:hover {
@@ -535,6 +536,69 @@ section {
     color: var(--grey-color);
 }
 /* Product-page */
+
+/* Cart-page */
+.cart-page {
+    padding: 80px 0;
+}
+
+.cart-page h1 {
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.44;
+}
+
+.cart-product {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cart-product img {
+    max-height: 120px;
+    margin-right: 20px;
+}
+
+.cart-product-info h5.product-name {
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.cart-product-info p.product-variation {
+    color: var(--grey2-color);
+    font-size: 14px;
+    line-height: 1.44;
+    font-weight: 700;
+}
+
+.cart-product-info .product-qty input {
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    max-width: 60px;
+}
+
+.cart-product-icons {
+    align-self: stretch;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.cart-btn.btn {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px;
+    width: 30%;
+}
+/* Cart-page */
 
 @media only screen and (max-width: 992px) {
     .hero-section {
