@@ -99,7 +99,7 @@ section {
     text-transform: uppercase;
 }
 
-.btn-warning:hover {
+.btn-warning:hover, .btn.btn-warning:active {
     background-color: var(--accent-color2);
     border-color: var(--accent-color2);
     color: var(--text-color);
@@ -597,6 +597,33 @@ section {
     font-weight: 700;
     padding: 14px;
     width: 30%;
+}
+
+.cart-summary {
+    margin-top: 40px;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cart-summary h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.btn-summary {
+    background-color: transparent;
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+
+.btn-summary:hover {
+    background-color: transparent;
+    color: var(--accent-color);
 }
 /* Cart-page */
 
